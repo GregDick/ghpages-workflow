@@ -5,8 +5,8 @@ deploy_directory=public
 deploy_branch=gh-pages
 
 #if no user identity is already set in the current git environment, use this:
-default_username=deploy.sh
-default_email=
+# default_username=deploy.sh
+# default_email=
 
 #repository to deploy to. must be readable and writable.
 repo=origin
@@ -61,7 +61,7 @@ function restore_head {
 	else
 		git symbolic-ref HEAD refs/heads/$previous_branch
 	fi
-	
+
 	git reset --mixed
 }
 
